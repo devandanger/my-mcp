@@ -1,0 +1,18 @@
+name: Unity MCP Runner
+description: Launches the Unity MCP server
+
+tools:
+  - name: unityMCP
+    type: shell
+    command: /Users/evananger/.local/bin/uv
+    args:
+      - run
+      - --directory
+      - /Users/evananger/Library/AppSupport/UnityMCP/UnityMcpServer/src
+      - server.py
+
+flows:
+  - name: start-unity-mcp
+    steps:
+      - tool: unityMCP
+        input: ""
