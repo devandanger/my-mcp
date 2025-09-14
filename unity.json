@@ -1,0 +1,20 @@
+{
+  "tools": {
+    "unityMCP": {
+      "type": "shell",
+      "command": "/Users/evananger/.local/bin/uv",
+      "args": [
+        "run",
+        "--directory",
+        "/Users/evananger/Library/AppSupport/UnityMCP/UnityMcpServer/src",
+        "server.py"
+      ]
+    }
+  },
+  "flow": [
+    {
+      "tool": "unityMCP",
+      "input": ""
+    }
+  ]
+}
